@@ -1,0 +1,15 @@
+{
+  "name": "nodeContinousIntegration",
+  "version": "0.0.0",
+  "homepage": "https://github.com/galicians/nodeContinuosTDDIntegration",
+  "authors": [
+    "Pablo Portabales"
+  ],
+  "description": "Job finding app",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.5"
+  }
+}
