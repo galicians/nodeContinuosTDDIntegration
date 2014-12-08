@@ -4,6 +4,7 @@ var port = process.env.port || 3000
 
 
 app.set('view engine', 'jade');
+app.use(express.static(__dirname + '/public'));
 
 app.set('views', __dirname);
 
