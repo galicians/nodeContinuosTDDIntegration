@@ -12,6 +12,6 @@ app.get('*', function(req, res){
     res.render('index');
 });
 
-app.listen(PORT, function(req, res) {
-    console.log('express server listening at port', PORT);
+app.listen(port, function(req, res) {
+    console.log('express server listening at port', port);
 })
