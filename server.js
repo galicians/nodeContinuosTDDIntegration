@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var port = process.env.PORT || 3000
+var jobModel = require('./models/Job');
 
 
 app.set('view engine', 'jade');
@@ -17,12 +18,13 @@ app.get('*', function(req, res){
     res.render('index');
 });
 
-mongoose.connect('mongodb://localhost/jobfinder');
+mongoose.connect('mongodb://localhost/conIntegration');
 
 var con = mongoose.connection;
 
 con.once('open', function() {
     console.log('connected to mongodb successfully');
+    jobModel.seedJobs();
 });
 
 app.listen(port, function(req, res) {
