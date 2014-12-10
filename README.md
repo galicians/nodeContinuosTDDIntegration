@@ -16,3 +16,6 @@ jade as view template
 angular
 
 Express server is running at localhost, port 3000. In case there is an environment variable indicating another port it will listen on that specific port.
+
+###Pending:
+- Bower postinstall fails in heroku, when installed as dev dependency a per https://github.com/heroku/heroku-buildpack-nodejs/issues/91
